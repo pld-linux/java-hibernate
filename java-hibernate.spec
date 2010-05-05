@@ -20,7 +20,6 @@ Requires:	java-cglib
 Requires:	java-commons-collections
 Requires:	java-dom4j
 Requires:	java-javassist
-Requires:	java-jta
 Requires:	java-slf4j
 Requires:	jpackage-utils
 BuildArch:	noarch
@@ -103,11 +102,11 @@ cp -a lib/optional/jbosscache/jbosscache-core-3.2.1.GA.jar $RPM_BUILD_ROOT%{_jav
 cp -a lib/optional/infinispan/infinispan-core-4.0.0.FINAL.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/infinispan-core-4.0.0.FINAL.jar
 cp -a lib/optional/oscache/oscache-2.1.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/oscache-2.1.jar
 cp -a lib/optional/swarmcache/swarmcache-1.0RC2.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/swarmcache-1.0RC2.jar
+cp -a lib/required/jta-1.1.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/jta-1.1.jar
 
 # symlink required libs that are available in PLD
 ln -s ${_javadir}/cglib.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/cglib.jar
 ln -s ${_javadir}/javassist.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/javassist.jar
-ln -s ${_javadir}/jta.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/jta.jar
 ln -s ${_javadir}/antlr.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/antlr.jar
 ln -s ${_javadir}/commons-collections.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/commons-collections.jar
 ln -s ${_javadir}/dom4j.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}/lib/dom4j.jar
