@@ -8,7 +8,7 @@ Version:	3.5.1
 Release:	0.1
 License:	LGPL
 Group:		Libraries/Java
-Source0:	https://sourceforge.net/projects/hibernate/files/hibernate3/3.5.1-Final/hibernate-distribution-%{version}-Final-dist.tar.gz
+Source0:	http://downloads.sourceforge.net/project/hibernate/hibernate3/%{version}-Final/hibernate-distribution-%{version}-Final-dist.tar.gz
 # Source0-md5:	407fdc684dc8c48e46bc2ce76a05a207
 URL:		http://www.hibernate.org/
 BuildRequires:	jar
