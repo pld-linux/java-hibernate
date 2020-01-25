@@ -1,6 +1,5 @@
 # TODO:
 # - build from source, but FIRST finish maven
-%include	/usr/lib/rpm/macros.java
 %define		srcname		hibernate
 Summary:	Relational Persistence for Java
 Name:		java-hibernate
